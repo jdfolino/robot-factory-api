@@ -1,0 +1,44 @@
+Rails:
+  Enabled: true
+FrozenStringLiteralComment:
+  Enabled: false
+AllCops:
+  TargetRubyVersion: 2.5
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'doc/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'vendor/**/*'
+
+Metrics/AbcSize:
+  Max: 26
+
+Metrics/BlockLength:
+  Max: 28
+  Exclude:
+     - "**/*_spec.rb"
+
+Metrics/LineLength:
+  Max: 110
+
+Metrics/MethodLength:
+  Max: 27
+
+Style/FileName:
+  Exclude:
+    - 'Gemfile'
+
+Style/Documentation:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false

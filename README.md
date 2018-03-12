@@ -1,5 +1,7 @@
 # README
 
+Frontend code is here: https://github.com/jdfolino/robot-factory-ui 
+
 Design Notes
 * Used a has_many for the statuses. Makes querying easier based on status. Other option was to serialize an array of statuses which would simplify the datamodel but make querying more complex
 * Personally I prefer restful routes as opposed to routes like '/robots/recycle'. However these routes were part of the specification
